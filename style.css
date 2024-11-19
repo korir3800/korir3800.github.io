@@ -22,8 +22,12 @@ header {
     background-color: #1a237e;
     color: white;
     padding: 20px;
+    position:sticky;
+    top: 20px;
     text-align: center;
 }
+
+
 
 /* Navigation styles */
 nav ul {
