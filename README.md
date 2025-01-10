@@ -1,1 +1,1 @@
-"Hello world twice" 
+"Test message" 
