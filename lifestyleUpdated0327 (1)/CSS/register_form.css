@@ -1,0 +1,118 @@
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-label {
+    font-weight: bold;
+    display: block;
+   
+    margin-bottom: 5px;
+}
+
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+.form-control:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #f0fcff;
+}
+
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.password-toggle {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 5px;
+    width: 100px; 
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    display: block;
+    text-align: left;
+}
+
+
+button {
+    width: 100px; 
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button[type="submit"],
+button[type="reset"] {
+    margin: 10px 5px; 
+    display: inline-block;
+}
+
+
+.d-flex {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+
+button:hover, .password-toggle:hover {
+    background: linear-gradient(135deg, #ff5f6d, #ff758c);
+}
+input::placeholder {
+    color: rgb(160, 158, 158)!important;  
+    opacity: 1;  
+}
+#toggle-password {
+    color: white !important; 
+}
+
+
+.success-message {
+    margin-top: 20px;
+    color: white;
+    background-color: #28a745; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1s ease, transform 1s ease; 
+}

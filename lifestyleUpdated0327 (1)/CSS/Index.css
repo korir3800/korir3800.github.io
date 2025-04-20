@@ -1,0 +1,188 @@
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: black;
+
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    background: #e8e8e8;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ff758c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff5f6d, #ff758c);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #ff3b5c, #ff5f6d);
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff5f6d, #ff758c);
+}
+
+.navbar {
+    background: #ff758c !important; 
+}
+.navbar .nav-link, 
+.navbar .navbar-brand {
+    color: white !important; 
+}
+.night-mode {
+    background-color: #000408;
+    color: white;
+}
+ 
+.night-mode .navbar {
+    background: #333 !important; 
+}
+#weather {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#toggleDayNight {
+    margin-bottom: 15px; 
+}
+.loading {
+    font-style: italic;
+    color: #ff758c;
+}
+
+
+#mood-selector {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: #ffedbc;
+    display: flex;
+    justify-content: center;
+} 
+
+
+#timer-display {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5f6d;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+#fun-fact-section {
+    background: #ff9a9e;
+    color: white;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;  
+
+}
+
+#recipe-section {
+    background: #fbc2eb;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;  
+}
+
+#timer-section {
+    text-align: center; 
+}
+
+#timer-display {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5f6d;
+    margin-bottom: 15px; 
+}
+
+#timer-section button {
+    display: inline-block; 
+    margin: 5px; 
+}
+
+#mood-section {
+    background: #ffc3a0;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;  
+}

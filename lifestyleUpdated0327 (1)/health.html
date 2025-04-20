@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Assistant - Main</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+     <!-- day or night icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+     <!-- Linking an external CSS file -->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- Linking an external javascript file  -->
+    <script src="JAVASCRIPT/Script.js" defer></script>
+     <style>
+        
+    
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            
+            <!-- Website Name -->
+            <a class="navbar-brand" href="index.html">Lifestyle</a>
+              
+            <!-- Main Navigation Menu -->
+             <!-- Mobile Toggle Button (Hamburger Menu) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- Dropdown Menu for App -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="appDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Health
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="appDropdown">
+                            <li><a class="dropdown-item" href="#fun-fact-section">Fun Facts</a></li>
+                            <li><a class="dropdown-item" href="#recipe-section">Recipes</a></li>
+                            <li><a class="dropdown-item" href="#timer-section">Timer</a></li>
+                            <li><a class="dropdown-item" href="#mood-section">Mood</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Registration.html">Register</a>
+                  </li>
+                </ul>
+            </div>
+    
+        </div>
+    </nav>
+    
+  
+    <div id="weather-section">
+            
+        <div id="weather" class="loading">Loading weather data...</div>
+        <span class="loading">Day/Night mode：</span>
+        <button id="toggleDayNight" class="btn btn-light">
+            <i id="toggleIcon" class="bi bi-moon-fill"></i>
+        </button>
+    </div>
+    <div class="container">
+        <h1>Main Features</h1>
+        <section id="fun-fact-section">
+            <h2>Did You Know?</h2>
+            <p id="fun-fact">Loading...</p>
+            <button id="new-fact">New Fun Fact</button>
+        </section>
+        <!-- Healthy Recipe Section -->
+        <section id="recipe-section">
+            <h2>Healthy Recipe</h2>
+            <p id="recipe">Fetching recipe...</p>
+            <img id="recipe-img" src="IMAGES/food.jpg" alt="Recipe Image">
+        </section>
+
+        <!-- Productivity Timer Section -->
+        <section id="timer-section">
+            <h2>Productivity Timer</h2>
+            <p id="timer-display">25:00</p>
+            <button id="start-timer">Start</button>
+            <button id="pause-timer">Pause</button>
+            <button id="reset-timer">Reset</button>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+
+        </section>
+
+        <!-- User Mood Section -->
+        <section id="mood-section">
+            <h2>How Are You Feeling?</h2>
+            <select id="mood-selector">
+                <option value="happy">Happy</option>
+                <option value="neutral">Neutral</option>
+                <option value="stressed">Stressed</option>
+            </select>
+            <p id="mood-response">Choose your mood to get personalized tips.</p>
+            <img id="mood-img" src="IMAGES/mood-tracker-1.jpg" alt="Mood Image">
+        </section>
+    </div>
+      <!-- Footer -->
+    <footer>
+        <div>
+        <p>&copy; 2025 Lifestyle Assistant Blogs. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>

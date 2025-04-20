@@ -1,0 +1,369 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    background: #e8e8e8;
+}
+
+
+nav {
+    background: #ff758c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff5f6d, #ff758c);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #ff3b5c, #ff5f6d);
+}
+
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff5f6d, #ff758c);
+}
+
+
+.navbar {
+    background: #ff758c !important;
+}
+
+.navbar .nav-link, 
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.night-mode {
+    background-color: #000408;
+    color: white;
+}
+
+.night-mode .container {
+    background: #1a1a1a;
+    color: white;
+}
+
+.night-mode section {
+    background: #2a2a2a;
+    color: white;
+}
+
+.night-mode h1 {
+    color: #fff;
+}
+
+.night-mode .navbar {
+    background: #333 !important;
+}
+
+
+.loading {
+    font-style: italic;
+    color: #ff758c;
+}
+
+
+#mood-selector {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: #ffedbc;
+    display: flex;
+    justify-content: center;
+} 
+
+
+#timer-display {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5f6d;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+#fun-fact-section {
+    background: #ff9a9e;
+    color: white;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;  
+}
+
+#recipe-section {
+    background: #fbc2eb;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;  
+}
+
+#timer-section {
+    text-align: center; 
+}
+
+#mood-section {
+    background: #ffc3a0;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;  
+}
+
+
+#weather-section {
+    position: fixed;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    max-width: 90%;
+    background: rgba(255, 255, 255);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+#weather {
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+#toggleDayNight {
+    padding: 6px 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#toggleIcon {
+    font-size: 14px;
+}
+
+
+.container {
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+html {
+    scroll-padding-top: 110px;
+}
+
+.navbar-nav .dropdown-item {
+    scroll-behavior: smooth;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: #ff758c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    left: 0;
+    height: 40px;
+    transition: background-color 0.5s ease;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.night-mode footer {
+    background-color: #333 !important;
+}
+
+
+#toggleDayNight,
+.navbar-toggler {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+#toggleIcon {
+    font-size: 16px;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(192, 4, 4, 0.3);
+    background: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar-toggler:hover {
+    border-color: rgba(192, 4, 4, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: #ff758c;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+#progress-bar-container {
+    width: 100%;
+    background: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.shake-container {
+    overflow: visible !important;
+}
+
+
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+.explode {
+    animation: explode 0.5s ease-out forwards;
+    background: linear-gradient(90deg, #ff0000, #ff7eb3) !important;
+    box-shadow: 0 0 20px rgba(255, 117, 140, 0.8);
+}
+
+
+#timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#timer-controls button {
+    min-width: 80px;
+}

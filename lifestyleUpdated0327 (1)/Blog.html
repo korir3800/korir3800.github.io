@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Assistant - Main</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+     <!-- day or night icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+     <!-- Linking an external CSS file -->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- Linking an external javascript file  -->
+    <script src="JAVASCRIPT/Script.js" defer></script>
+     <style>
+        
+    
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            
+            <!-- Website Name -->
+            <a class="navbar-brand" href="index.html">Lifestyle</a>
+              
+             <!-- Mobile Toggle Button (Hamburger Menu) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a class="nav-link" href="health.html">Health</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Registration.html">Register</a>
+                  </li>
+                </ul>
+            </div>
+    
+        </div>
+    </nav>
+    
+  
+    <div id="weather-section">
+            
+        <div id="weather" class="loading">Loading weather data...</div>
+        <span class="loading">Day/Night mode：</span>
+        <button id="toggleDayNight" class="btn btn-light">
+            <i id="toggleIcon" class="bi bi-moon-fill"></i>
+        </button>
+    </div>
+  <!-- Main Content -->
+  <div class="container mt-10 pt-4">
+    <h1 class="my-4">Our Latest Blogs</h1>
+    
+    <!-- Accordion Wrapper -->
+    <div id="accordion">
+      <!-- Blog 1 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">Embracing a Healthy Lifestyle <span class="badge bg-success">Featured</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/HL.jpg" alt="Healthy Lifestyle" class="img-fluid my-2">
+            <p>Living a healthy life is all about balance. In this post, we explore simple ways to incorporate healthy eating, regular exercise, and mindfulness into your daily routine.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 2 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">Mindfulness in Everyday Life <span class="badge bg-info">New</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/M.jpg" alt="Mindfulness" class="img-fluid my-2">
+            <p>Mindfulness is more than just a buzzword—it can help reduce stress and improve focus. Learn how integrating small mindfulness practices into your routine can make a significant difference.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 3 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">The Joy of Cooking at Home <span class="badge bg-warning">Popular</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/C.jpg" alt="Cooking at Home" class="img-fluid my-2">
+            <p>Cooking at home is both fun and rewarding. From choosing fresh ingredients to experimenting with new recipes, find out how home cooking can be a creative and fulfilling part of your lifestyle.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 4 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">Staying Productive in a Busy World <span class="badge bg-primary">Trending</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/P.jpg" alt="Productivity" class="img-fluid my-2">
+            <p>Productivity isn’t about doing more; it’s about focusing on what truly matters. In this post, we share practical productivity hacks to help manage your time effectively.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 5 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">The Importance of Sleep for Health <span class="badge bg-success">Featured</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/Sleep.jpg" alt="Sleep" class="img-fluid my-2">
+            <p>Good sleep is crucial for overall well-being. This post discusses the benefits of quality sleep and tips to improve your sleep hygiene.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 6 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">Finding Balance Between Work and Life <span class="badge bg-info">New</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/worklife.jpg" alt="Work-Life Balance" class="img-fluid my-2">
+            <p>Work-life balance is essential for maintaining both personal and professional happiness. Learn how to manage time and set boundaries for a healthier life.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 7 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">Eating Plant-Based for Better Health <span class="badge bg-warning">Popular</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/food.jpg" alt="Plant-Based Diet" class="img-fluid my-2">
+            <p>Explore the health benefits of a plant-based diet. In this blog, we share tips on incorporating more plant-based foods into your meals and why it’s good for your health.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 8 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">Mindful Breathing for Stress Relief <span class="badge bg-primary">Trending</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/mindful.jpg" alt="Mindful Breathing" class="img-fluid my-2">
+            <p>Mindful breathing techniques can significantly reduce stress. Discover simple breathing exercises that can help you relax and maintain calm in stressful situations.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Blog 9 -->
+      <div class="card">
+        <div class="card-header">
+          <a href="#" class="accordion-toggle">Fitness for Beginners: Getting Started <span class="badge bg-success">Featured</span></a>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <img src="IMAGES/beginner.jpg" alt="Fitness for Beginners" class="img-fluid my-2">
+            <p>If you're new to fitness, this post is for you. We break down simple ways to start exercising and building a fitness routine that works for you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Footer -->
+  <footer>
+    <div>
+    <p>&copy; 2025 Lifestyle Assistant Blogs. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+</body>
+</html>
